@@ -1,0 +1,13 @@
+[build]
+  # Perintah build: Netlify tidak benar-benar membangun, tapi ini diperlukan
+  command = "echo 'Deploying PHP API...'"
+
+  # Direktori yang akan di-deploy (kita buat folder functions)
+  functions = "functions" 
+  
+  # Direktori output statis (ini boleh dummy, karena kita fokus ke fungsi)
+  publish = "public" 
+
+# --- KONFIGURASI UNTUK MENJALANKAN PHP ---
+[[plugins]]
+  package = "netlify-plugin-php"
